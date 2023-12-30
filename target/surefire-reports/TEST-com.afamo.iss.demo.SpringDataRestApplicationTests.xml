@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.afamo.iss.demo.SpringDataRestApplicationTests" time="16.043" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="20"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Afam O\IdeaProjects\DEV_DRONES-d942feeb-bc08-a7af-8fe6-e16d278fa891\target\test-classes;C:\Users\Afam O\IdeaProjects\DEV_DRONES-d942feeb-bc08-a7af-8fe6-e16d278fa891\target\classes;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.0\spring-boot-starter-data-jpa-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.0\spring-boot-starter-aop-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-aop\6.1.1\spring-aop-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\aspectj\aspectjweaver\1.9.20.1\aspectjweaver-1.9.20.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.0\spring-boot-starter-jdbc-3.2.0.jar;C:\Users\Afam O\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-jdbc\6.1.1\spring-jdbc-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\hibernate\orm\hibernate-core\6.3.1.Final\hibernate-core-6.3.1.Final.jar;C:\Users\Afam O\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Afam O\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Afam O\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Afam O\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Afam O\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Afam O\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\Afam O\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\Afam O\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\Afam O\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\Afam O\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\Afam O\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Afam O\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Afam O\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\data\spring-data-jpa\3.2.0\spring-data-jpa-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\data\spring-data-commons\3.2.0\spring-data-commons-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-orm\6.1.1\spring-orm-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-context\6.1.1\spring-context-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-tx\6.1.1\spring-tx-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-beans\6.1.1\spring-beans-6.1.1.jar;C:\Users\Afam O\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-aspects\6.1.1\spring-aspects-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.0\spring-boot-starter-web-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.0\spring-boot-starter-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.0\spring-boot-starter-logging-3.2.0.jar;C:\Users\Afam O\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\Afam O\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\Afam O\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\Afam O\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Afam O\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\Afam O\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.0\spring-boot-starter-json-3.2.0.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.0\spring-boot-starter-tomcat-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.16\tomcat-embed-core-10.1.16.jar;C:\Users\Afam O\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.16\tomcat-embed-el-10.1.16.jar;C:\Users\Afam O\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.16\tomcat-embed-websocket-10.1.16.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-web\6.1.1\spring-web-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-webmvc\6.1.1\spring-webmvc-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-expression\6.1.1\spring-expression-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-devtools\3.2.0\spring-boot-devtools-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot\3.2.0\spring-boot-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.0\spring-boot-autoconfigure-3.2.0.jar;C:\Users\Afam O\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\Afam O\.m2\repository\org\modelmapper\modelmapper\3.2.0\modelmapper-3.2.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-boot-starter\3.0.0\springfox-boot-starter-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-oas\3.0.0\springfox-oas-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\swagger\core\v3\swagger-annotations\2.1.2\swagger-annotations-2.1.2.jar;C:\Users\Afam O\.m2\repository\io\swagger\core\v3\swagger-models\2.1.2\swagger-models-2.1.2.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-spi\3.0.0\springfox-spi-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-schema\3.0.0\springfox-schema-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-core\3.0.0\springfox-core-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-spring-web\3.0.0\springfox-spring-web-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\github\classgraph\classgraph\4.8.83\classgraph-4.8.83.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-spring-webflux\3.0.0\springfox-spring-webflux-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-swagger-common\3.0.0\springfox-swagger-common-3.0.0.jar;C:\Users\Afam O\.m2\repository\org\mapstruct\mapstruct\1.3.1.Final\mapstruct-1.3.1.Final.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-data-rest\3.0.0\springfox-data-rest-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-bean-validators\3.0.0\springfox-bean-validators-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-swagger2\3.0.0\springfox-swagger2-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\swagger\swagger-annotations\1.5.20\swagger-annotations-1.5.20.jar;C:\Users\Afam O\.m2\repository\io\swagger\swagger-models\1.5.20\swagger-models-1.5.20.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\Afam O\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Afam O\.m2\repository\org\springframework\plugin\spring-plugin-core\2.0.0.RELEASE\spring-plugin-core-2.0.0.RELEASE.jar;C:\Users\Afam O\.m2\repository\org\springframework\plugin\spring-plugin-metadata\2.0.0.RELEASE\spring-plugin-metadata-2.0.0.RELEASE.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-swagger-ui\3.0.0\springfox-swagger-ui-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-spring-webmvc\3.0.0\springfox-spring-webmvc-3.0.0.jar;C:\Users\Afam O\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.2.0\spring-boot-starter-actuator-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.2.0\spring-boot-actuator-autoconfigure-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-actuator\3.2.0\spring-boot-actuator-3.2.0.jar;C:\Users\Afam O\.m2\repository\io\micrometer\micrometer-observation\1.12.0\micrometer-observation-1.12.0.jar;C:\Users\Afam O\.m2\repository\io\micrometer\micrometer-commons\1.12.0\micrometer-commons-1.12.0.jar;C:\Users\Afam O\.m2\repository\io\micrometer\micrometer-jakarta9\1.12.0\micrometer-jakarta9-1.12.0.jar;C:\Users\Afam O\.m2\repository\io\micrometer\micrometer-core\1.12.0\micrometer-core-1.12.0.jar;C:\Users\Afam O\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Afam O\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.0\spring-boot-starter-test-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-test\3.2.0\spring-boot-test-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.0\spring-boot-test-autoconfigure-3.2.0.jar;C:\Users\Afam O\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\Afam O\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\Afam O\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Afam O\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\Afam O\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\Afam O\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Afam O\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Afam O\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\Afam O\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Afam O\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\Afam O\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\Afam O\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Afam O\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\Afam O\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Afam O\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\Afam O\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\Afam O\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\Afam O\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\Afam O\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\Afam O\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Afam O\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\Afam O\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Afam O\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-core\6.1.1\spring-core-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-jcl\6.1.1\spring-jcl-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-test\6.1.1\spring-test-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Africa/Lagos"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="user.country.format" value="NG"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\Afam O\.jdks\openjdk-20.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\Afam O\AppData\Local\Temp\surefire7252284173223035076\surefirebooter-20231214135118193_3.jar C:\Users\Afam O\AppData\Local\Temp\surefire7252284173223035076 2023-12-14T13-51-18_037-jvmRun1 surefire-20231214135118193_1tmp surefire_0-20231214135118193_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Afam O\IdeaProjects\DEV_DRONES-d942feeb-bc08-a7af-8fe6-e16d278fa891\target\test-classes;C:\Users\Afam O\IdeaProjects\DEV_DRONES-d942feeb-bc08-a7af-8fe6-e16d278fa891\target\classes;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.0\spring-boot-starter-data-jpa-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.0\spring-boot-starter-aop-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-aop\6.1.1\spring-aop-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\aspectj\aspectjweaver\1.9.20.1\aspectjweaver-1.9.20.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.0\spring-boot-starter-jdbc-3.2.0.jar;C:\Users\Afam O\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-jdbc\6.1.1\spring-jdbc-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\hibernate\orm\hibernate-core\6.3.1.Final\hibernate-core-6.3.1.Final.jar;C:\Users\Afam O\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Afam O\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Afam O\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Afam O\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Afam O\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Afam O\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\Afam O\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\Afam O\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\Afam O\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\Afam O\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\Afam O\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Afam O\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Afam O\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\data\spring-data-jpa\3.2.0\spring-data-jpa-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\data\spring-data-commons\3.2.0\spring-data-commons-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-orm\6.1.1\spring-orm-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-context\6.1.1\spring-context-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-tx\6.1.1\spring-tx-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-beans\6.1.1\spring-beans-6.1.1.jar;C:\Users\Afam O\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-aspects\6.1.1\spring-aspects-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.0\spring-boot-starter-web-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.0\spring-boot-starter-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.0\spring-boot-starter-logging-3.2.0.jar;C:\Users\Afam O\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\Afam O\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\Afam O\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\Afam O\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Afam O\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\Afam O\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.0\spring-boot-starter-json-3.2.0.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.3\jackson-datatype-jdk8-2.15.3.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.3\jackson-datatype-jsr310-2.15.3.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.3\jackson-module-parameter-names-2.15.3.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.0\spring-boot-starter-tomcat-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.16\tomcat-embed-core-10.1.16.jar;C:\Users\Afam O\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.16\tomcat-embed-el-10.1.16.jar;C:\Users\Afam O\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.16\tomcat-embed-websocket-10.1.16.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-web\6.1.1\spring-web-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-webmvc\6.1.1\spring-webmvc-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-expression\6.1.1\spring-expression-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-devtools\3.2.0\spring-boot-devtools-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot\3.2.0\spring-boot-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.0\spring-boot-autoconfigure-3.2.0.jar;C:\Users\Afam O\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\Afam O\.m2\repository\org\modelmapper\modelmapper\3.2.0\modelmapper-3.2.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-boot-starter\3.0.0\springfox-boot-starter-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-oas\3.0.0\springfox-oas-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\swagger\core\v3\swagger-annotations\2.1.2\swagger-annotations-2.1.2.jar;C:\Users\Afam O\.m2\repository\io\swagger\core\v3\swagger-models\2.1.2\swagger-models-2.1.2.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-spi\3.0.0\springfox-spi-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-schema\3.0.0\springfox-schema-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-core\3.0.0\springfox-core-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-spring-web\3.0.0\springfox-spring-web-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\github\classgraph\classgraph\4.8.83\classgraph-4.8.83.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-spring-webflux\3.0.0\springfox-spring-webflux-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-swagger-common\3.0.0\springfox-swagger-common-3.0.0.jar;C:\Users\Afam O\.m2\repository\org\mapstruct\mapstruct\1.3.1.Final\mapstruct-1.3.1.Final.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-data-rest\3.0.0\springfox-data-rest-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-bean-validators\3.0.0\springfox-bean-validators-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-swagger2\3.0.0\springfox-swagger2-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\swagger\swagger-annotations\1.5.20\swagger-annotations-1.5.20.jar;C:\Users\Afam O\.m2\repository\io\swagger\swagger-models\1.5.20\swagger-models-1.5.20.jar;C:\Users\Afam O\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\Afam O\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Afam O\.m2\repository\org\springframework\plugin\spring-plugin-core\2.0.0.RELEASE\spring-plugin-core-2.0.0.RELEASE.jar;C:\Users\Afam O\.m2\repository\org\springframework\plugin\spring-plugin-metadata\2.0.0.RELEASE\spring-plugin-metadata-2.0.0.RELEASE.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-swagger-ui\3.0.0\springfox-swagger-ui-3.0.0.jar;C:\Users\Afam O\.m2\repository\io\springfox\springfox-spring-webmvc\3.0.0\springfox-spring-webmvc-3.0.0.jar;C:\Users\Afam O\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.2.0\spring-boot-starter-actuator-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.2.0\spring-boot-actuator-autoconfigure-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-actuator\3.2.0\spring-boot-actuator-3.2.0.jar;C:\Users\Afam O\.m2\repository\io\micrometer\micrometer-observation\1.12.0\micrometer-observation-1.12.0.jar;C:\Users\Afam O\.m2\repository\io\micrometer\micrometer-commons\1.12.0\micrometer-commons-1.12.0.jar;C:\Users\Afam O\.m2\repository\io\micrometer\micrometer-jakarta9\1.12.0\micrometer-jakarta9-1.12.0.jar;C:\Users\Afam O\.m2\repository\io\micrometer\micrometer-core\1.12.0\micrometer-core-1.12.0.jar;C:\Users\Afam O\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Afam O\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.0\spring-boot-starter-test-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-test\3.2.0\spring-boot-test-3.2.0.jar;C:\Users\Afam O\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.0\spring-boot-test-autoconfigure-3.2.0.jar;C:\Users\Afam O\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\Afam O\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\Afam O\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Afam O\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\Afam O\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\Afam O\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Afam O\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Afam O\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\Afam O\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Afam O\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.1\junit-jupiter-5.10.1.jar;C:\Users\Afam O\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.1\junit-jupiter-api-5.10.1.jar;C:\Users\Afam O\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Afam O\.m2\repository\org\junit\platform\junit-platform-commons\1.10.1\junit-platform-commons-1.10.1.jar;C:\Users\Afam O\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Afam O\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.1\junit-jupiter-params-5.10.1.jar;C:\Users\Afam O\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.1\junit-jupiter-engine-5.10.1.jar;C:\Users\Afam O\.m2\repository\org\junit\platform\junit-platform-engine\1.10.1\junit-platform-engine-1.10.1.jar;C:\Users\Afam O\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\Afam O\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\Afam O\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Afam O\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\Afam O\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Afam O\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-core\6.1.1\spring-core-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-jcl\6.1.1\spring-jcl-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\springframework\spring-test\6.1.1\spring-test-6.1.1.jar;C:\Users\Afam O\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Afam O"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="C:\Users\Afam O\.jdks\openjdk-20.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Afam O\IdeaProjects\DEV_DRONES-d942feeb-bc08-a7af-8fe6-e16d278fa891"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\Afam O\AppData\Local\Temp\surefire7252284173223035076\surefirebooter-20231214135118193_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="20.0.1+9-29"/>
+    <property name="user.name" value="Afam O"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Afam O\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\AFAMO~1\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2023.1.2"/>
+    <property name="com.zaxxer.hikari.pool_number" value="7"/>
+    <property name="java.version" value="20.0.1"/>
+    <property name="user.dir" value="C:\Users\Afam O\IdeaProjects\DEV_DRONES-d942feeb-bc08-a7af-8fe6-e16d278fa891"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="17084"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\Afam O\.jdks\openjdk-20.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\bin;C:\Users\Afam O\.jdks\openjdk-20.0.1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Afam O\AppData\Local\Programs\Python\Python311;C:\Program Files\nodejs\;C:\Users\Afam O\AppData\Roaming\cockroach;C:\Users\Afam O;C:\Program Files\Docker\Docker\resources\bin;C:\apache-maven-3.9.4-bin\apache-maven-3.9.4\bin;;C:\Program Files\Git LFS;C:\Users\Afam O\AppData\Local\Microsoft\WindowsApps;C:\Users\Afam O\AppData\Roaming\npm;C:\Users\Afam O\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.2\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="20.0.1+9-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="64.0"/>
+  </properties>
+  <testcase name="testLoadDroneWithMedicationItems" classname="com.afamo.iss.demo.SpringDataRestApplicationTests" time="2.654">
+    <system-out><![CDATA[13:51:19.275 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.afamo.iss.demo.SpringDataRestApplicationTests]: SpringDataRestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:51:19.410 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.afamo.iss.demo.DroneRestApplication for test class com.afamo.iss.demo.SpringDataRestApplicationTests
+13:51:19.612 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-12-14T13:51:19.862+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Starting SpringDataRestApplicationTests using Java 20.0.1 with PID 17084 (started by Afam O in C:\Users\Afam O\IdeaProjects\DEV_DRONES-d942feeb-bc08-a7af-8fe6-e16d278fa891)
+2023-12-14T13:51:19.864+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-12-14T13:51:21.031+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-14T13:51:21.102+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+2023-12-14T13:51:21.907+01:00  INFO 17084 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-14T13:51:21.981+01:00  INFO 17084 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2023-12-14T13:51:22.028+01:00  INFO 17084 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-14T13:51:22.343+01:00  INFO 17084 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-14T13:51:22.375+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-14T13:51:22.594+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
+2023-12-14T13:51:22.596+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-14T13:51:22.625+01:00  WARN 17084 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-14T13:51:23.408+01:00  INFO 17084 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table drone (id bigint not null, battery_capacity float(53), model tinyint check (model between 0 and 3), serial_number varchar(100), state tinyint check (state between 0 and 5), weight_limit bigint, primary key (id))
+Hibernate: create table drone_audit_log (id bigint not null, battery_capacity float(53), date_time timestamp(6), drone_id bigint, primary key (id))
+Hibernate: create table drone_medications (id bigint generated by default as identity, drone_id bigint, medication_id bigint, primary key (id))
+Hibernate: create table medications (id bigint generated by default as identity, code varchar(255), image clob, name varchar(255), weight float(53), primary key (id))
+Hibernate: create sequence drone_audit_log_seq start with 1 increment by 50
+Hibernate: create sequence drone_seq start with 1 increment by 50
+2023-12-14T13:51:23.449+01:00  INFO 17084 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-14T13:51:24.362+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Creation Rate===>15000
+2023-12-14T13:51:24.362+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Retrieval Rate===>20000
+2023-12-14T13:51:24.648+01:00  WARN 17084 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-14T13:51:25.720+01:00  INFO 17084 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-14T13:51:25.720+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-14T13:51:25.736+01:00  INFO 17084 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-14T13:51:25.764+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 43 ms
+2023-12-14T13:51:25.856+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Started SpringDataRestApplicationTests in 6.259 seconds (process running for 7.54)
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 offset ? rows fetch first ? rows only
+2023-12-14T13:51:26.090+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Created AuditEventLogs ==>[]
+Hibernate: select dal1_0.id,dal1_0.battery_capacity,dal1_0.date_time,dal1_0.drone_id from drone_audit_log dal1_0 offset ? rows fetch first ? rows only
+2023-12-14T13:51:26.096+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Retrieved AuditEventLogs ==>[]
+Hibernate: select next value for drone_seq
+Hibernate: insert into drone (battery_capacity,model,serial_number,state,weight_limit,id) values (?,?,?,?,?,?)
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select next value for drone_seq
+Hibernate: insert into drone (battery_capacity,model,serial_number,state,weight_limit,id) values (?,?,?,?,?,?)
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: insert into drone (battery_capacity,model,serial_number,state,weight_limit,id) values (?,?,?,?,?,?)
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: insert into drone (battery_capacity,model,serial_number,state,weight_limit,id) values (?,?,?,?,?,?)
+2023-12-14T13:51:26.172+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Drone->ResponseDto(httpStatus=201, message=Successfull, data=Drone(id=4, serialNumber=141, model=CRUISER_WEIGHT, weightLimit=500, batteryCapacity=0.6, state=IDLE))
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: insert into medications (code,image,name,weight,id) values (?,?,?,?,default)
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: insert into medications (code,image,name,weight,id) values (?,?,?,?,default)
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: insert into medications (code,image,name,weight,id) values (?,?,?,?,default)
+2023-12-14T13:51:26.198+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Medication Item->ResponseDto(httpStatus=201, message=Successfull, data=Medication(id=3, name=Detol, weight=150.5, code=DET_20-D, image=det.jpg))
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0
+2023-12-14T13:51:26.212+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Successfully Retrieved Med Items -->[Medication(id=1, name=Artifeld, weight=300.3, code=AR-12, image=art.jpg), Medication(id=2, name=Panadol, weight=100.8, code=PA-31, image=pan.jpg), Medication(id=3, name=Detol, weight=150.5, code=DET_20-D, image=det.jpg)]
+2023-12-14T13:51:26.213+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Initial Data Seeding successfully Done
+2023-12-14T13:51:26.243+01:00  INFO 17084 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-14T13:51:26.245+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-14T13:51:26.247+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-14T13:51:26.251+01:00  INFO 17084 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-12-14T13:51:26.275+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Starting SpringDataRestApplicationTests using Java 20.0.1 with PID 17084 (started by Afam O in C:\Users\Afam O\IdeaProjects\DEV_DRONES-d942feeb-bc08-a7af-8fe6-e16d278fa891)
+2023-12-14T13:51:26.275+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-12-14T13:51:26.679+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-14T13:51:26.698+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 4 JPA repository interfaces.
+2023-12-14T13:51:26.952+01:00  INFO 17084 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-14T13:51:26.956+01:00  INFO 17084 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-14T13:51:26.959+01:00  INFO 17084 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-14T13:51:26.961+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-12-14T13:51:26.962+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:db user=SA
+2023-12-14T13:51:26.962+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-12-14T13:51:26.963+01:00  WARN 17084 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-14T13:51:27.044+01:00  INFO 17084 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-14T13:51:27.048+01:00  INFO 17084 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-14T13:51:27.360+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Creation Rate===>15000
+2023-12-14T13:51:27.361+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Retrieval Rate===>20000
+2023-12-14T13:51:27.498+01:00  WARN 17084 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-14T13:51:28.020+01:00  INFO 17084 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-14T13:51:28.020+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-14T13:51:28.029+01:00  INFO 17084 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-14T13:51:28.045+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 25 ms
+2023-12-14T13:51:28.070+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Started SpringDataRestApplicationTests in 1.819 seconds (process running for 9.755)
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 offset ? rows fetch first ? rows only
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select next value for drone_audit_log_seq
+Hibernate: select next value for drone_audit_log_seq
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+2023-12-14T13:51:28.083+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Drone->ResponseDto(httpStatus=409, message=Drone with serialNumber '141' already exists, data=null)
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+2023-12-14T13:51:28.091+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Medication Item->ResponseDto(httpStatus=409, message=Medication Item with 'DET_20-D' already exists, data=null)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+2023-12-14T13:51:28.096+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Successfully Retrieved Med Items -->[Medication(id=1, name=Artifeld, weight=300.3, code=AR-12, image=art.jpg), Medication(id=2, name=Panadol, weight=100.8, code=PA-31, image=pan.jpg), Medication(id=3, name=Detol, weight=150.5, code=DET_20-D, image=det.jpg)]
+2023-12-14T13:51:28.096+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Initial Data Seeding successfully Done
+2023-12-14T13:51:28.098+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Created AuditEventLogs ==>[DroneAuditLog(id=1, droneId=1, dateTime=2023-12-14T13:51:28.079095600, batteryCapacity=0.1), DroneAuditLog(id=2, droneId=2, dateTime=2023-12-14T13:51:28.079095600, batteryCapacity=0.2), DroneAuditLog(id=3, droneId=3, dateTime=2023-12-14T13:51:28.079095600, batteryCapacity=0.8), DroneAuditLog(id=4, droneId=4, dateTime=2023-12-14T13:51:28.079095600, batteryCapacity=0.6)]
+Hibernate: select dal1_0.id,dal1_0.battery_capacity,dal1_0.date_time,dal1_0.drone_id from drone_audit_log dal1_0 offset ? rows fetch first ? rows only
+2023-12-14T13:51:28.106+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Retrieved AuditEventLogs ==>[DroneAuditLog(id=1, droneId=1, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.1), DroneAuditLog(id=2, droneId=2, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.2), DroneAuditLog(id=3, droneId=3, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.8), DroneAuditLog(id=4, droneId=4, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.6)]
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.id=?
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.id=?
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.id=?
+Hibernate: insert into drone_medications (drone_id,medication_id,id) values (?,?,default)
+Hibernate: insert into drone_medications (drone_id,medication_id,id) values (?,?,default)
+2023-12-14T13:51:28.805+01:00  INFO 17084 --- [           main] c.a.i.d.s.i.DroneServiceImpl             : Successfully saved drone medications [DroneMedications(id=1, droneId=3, medicationId=2), DroneMedications(id=2, droneId=3, medicationId=3)]
+Hibernate: update drone set battery_capacity=?,model=?,serial_number=?,state=?,weight_limit=? where id=?
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /drones/api/load/MedicationItems
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"35"]
+             Body = {"droneId":3,"medicationIds":[2,3]}
+    Session Attrs = {}
+
+Handler:
+             Type = com.afamo.iss.demo.controller.DroneRestController
+           Method = com.afamo.iss.demo.controller.DroneRestController#loadDroneWithMedicationItems(LoadDroneRequestDTO)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"httpStatus":200,"message":"Successfull","data":{"drone":{"id":3,"serialNumber":"131","model":"MIDDLE_WEIGHT","weightLimit":300,"batteryCapacity":0.8,"state":"LOADED"},"medicationItems":[{"id":2,"name":"Panadol","weight":100.8,"code":"PA-31","image":"pan.jpg","hibernateLazyInitializer":{}},{"id":3,"name":"Detol","weight":150.5,"code":"DET_20-D","image":"det.jpg","hibernateLazyInitializer":{}}]}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="checkAvailableDronesForLoading" classname="com.afamo.iss.demo.SpringDataRestApplicationTests" time="1.503">
+    <system-out><![CDATA[2023-12-14T13:51:28.893+01:00  INFO 17084 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-14T13:51:28.894+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-12-14T13:51:28.895+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-12-14T13:51:28.898+01:00  INFO 17084 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-12-14T13:51:28.922+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Starting SpringDataRestApplicationTests using Java 20.0.1 with PID 17084 (started by Afam O in C:\Users\Afam O\IdeaProjects\DEV_DRONES-d942feeb-bc08-a7af-8fe6-e16d278fa891)
+2023-12-14T13:51:28.922+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-12-14T13:51:29.220+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-14T13:51:29.230+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 4 JPA repository interfaces.
+2023-12-14T13:51:29.351+01:00  INFO 17084 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-14T13:51:29.354+01:00  INFO 17084 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-14T13:51:29.359+01:00  INFO 17084 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-14T13:51:29.360+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-12-14T13:51:29.361+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:db user=SA
+2023-12-14T13:51:29.361+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-12-14T13:51:29.362+01:00  WARN 17084 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-14T13:51:29.434+01:00  INFO 17084 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-14T13:51:29.438+01:00  INFO 17084 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-14T13:51:29.769+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Creation Rate===>15000
+2023-12-14T13:51:29.769+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Retrieval Rate===>20000
+2023-12-14T13:51:29.869+01:00  WARN 17084 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-14T13:51:30.303+01:00  INFO 17084 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-14T13:51:30.304+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-14T13:51:30.310+01:00  INFO 17084 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-14T13:51:30.322+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 17 ms
+2023-12-14T13:51:30.343+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Started SpringDataRestApplicationTests in 1.445 seconds (process running for 12.028)
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 offset ? rows fetch first ? rows only
+Hibernate: select next value for drone_audit_log_seq
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+2023-12-14T13:51:30.358+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Drone->ResponseDto(httpStatus=409, message=Drone with serialNumber '141' already exists, data=null)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+2023-12-14T13:51:30.360+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Created AuditEventLogs ==>[DroneAuditLog(id=52, droneId=1, dateTime=2023-12-14T13:51:30.353466100, batteryCapacity=0.1), DroneAuditLog(id=53, droneId=2, dateTime=2023-12-14T13:51:30.353466100, batteryCapacity=0.2), DroneAuditLog(id=54, droneId=3, dateTime=2023-12-14T13:51:30.353466100, batteryCapacity=0.8), DroneAuditLog(id=55, droneId=4, dateTime=2023-12-14T13:51:30.353466100, batteryCapacity=0.6)]
+Hibernate: select dal1_0.id,dal1_0.battery_capacity,dal1_0.date_time,dal1_0.drone_id from drone_audit_log dal1_0 offset ? rows fetch first ? rows only
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+2023-12-14T13:51:30.365+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Retrieved AuditEventLogs ==>[DroneAuditLog(id=1, droneId=1, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.1), DroneAuditLog(id=2, droneId=2, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.2), DroneAuditLog(id=3, droneId=3, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.8), DroneAuditLog(id=4, droneId=4, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.6), DroneAuditLog(id=52, droneId=1, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.1), DroneAuditLog(id=53, droneId=2, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.2), DroneAuditLog(id=54, droneId=3, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.8), DroneAuditLog(id=55, droneId=4, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.6)]
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+2023-12-14T13:51:30.370+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Medication Item->ResponseDto(httpStatus=409, message=Medication Item with 'DET_20-D' already exists, data=null)
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0
+2023-12-14T13:51:30.373+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Successfully Retrieved Med Items -->[Medication(id=1, name=Artifeld, weight=300.3, code=AR-12, image=art.jpg), Medication(id=2, name=Panadol, weight=100.8, code=PA-31, image=pan.jpg), Medication(id=3, name=Detol, weight=150.5, code=DET_20-D, image=det.jpg)]
+2023-12-14T13:51:30.374+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Initial Data Seeding successfully Done
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.state=?
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /drones/api/check/AvailableDronesForLoading
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.afamo.iss.demo.controller.DroneRestController
+           Method = com.afamo.iss.demo.controller.DroneRestController#checkMedicationsItemsForADrone()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"httpStatus":200,"message":"Successfull","data":[{"id":1,"serialNumber":"111","model":"LIGHT_WEIGHT","weightLimit":100,"batteryCapacity":0.1,"state":"IDLE"},{"id":2,"serialNumber":"121","model":"HEAVY_WEIGHT","weightLimit":500,"batteryCapacity":0.2,"state":"IDLE"},{"id":4,"serialNumber":"141","model":"CRUISER_WEIGHT","weightLimit":500,"batteryCapacity":0.6,"state":"IDLE"}]}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="testDroneRegisteration" classname="com.afamo.iss.demo.SpringDataRestApplicationTests" time="1.382">
+    <system-out><![CDATA[2023-12-14T13:51:30.404+01:00  INFO 17084 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-14T13:51:30.404+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-12-14T13:51:30.406+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-12-14T13:51:30.409+01:00  INFO 17084 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-12-14T13:51:30.435+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Starting SpringDataRestApplicationTests using Java 20.0.1 with PID 17084 (started by Afam O in C:\Users\Afam O\IdeaProjects\DEV_DRONES-d942feeb-bc08-a7af-8fe6-e16d278fa891)
+2023-12-14T13:51:30.435+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-12-14T13:51:30.691+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-14T13:51:30.704+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 4 JPA repository interfaces.
+2023-12-14T13:51:30.944+01:00  INFO 17084 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-14T13:51:30.951+01:00  INFO 17084 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-14T13:51:30.958+01:00  INFO 17084 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-14T13:51:30.962+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-12-14T13:51:30.963+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:db user=SA
+2023-12-14T13:51:30.964+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-12-14T13:51:30.965+01:00  WARN 17084 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-14T13:51:31.028+01:00  INFO 17084 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-14T13:51:31.029+01:00  INFO 17084 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-14T13:51:31.262+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Creation Rate===>15000
+2023-12-14T13:51:31.262+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Retrieval Rate===>20000
+2023-12-14T13:51:31.357+01:00  WARN 17084 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-14T13:51:31.692+01:00  INFO 17084 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-14T13:51:31.692+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-14T13:51:31.697+01:00  INFO 17084 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-14T13:51:31.705+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 13 ms
+2023-12-14T13:51:31.736+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Started SpringDataRestApplicationTests in 1.326 seconds (process running for 13.42)
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 offset ? rows fetch first ? rows only
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select next value for drone_audit_log_seq
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+2023-12-14T13:51:31.748+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Drone->ResponseDto(httpStatus=409, message=Drone with serialNumber '141' already exists, data=null)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+2023-12-14T13:51:31.750+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Created AuditEventLogs ==>[DroneAuditLog(id=102, droneId=1, dateTime=2023-12-14T13:51:31.747055500, batteryCapacity=0.1), DroneAuditLog(id=103, droneId=2, dateTime=2023-12-14T13:51:31.747055500, batteryCapacity=0.2), DroneAuditLog(id=104, droneId=3, dateTime=2023-12-14T13:51:31.747055500, batteryCapacity=0.8), DroneAuditLog(id=105, droneId=4, dateTime=2023-12-14T13:51:31.747055500, batteryCapacity=0.6)]
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: select dal1_0.id,dal1_0.battery_capacity,dal1_0.date_time,dal1_0.drone_id from drone_audit_log dal1_0 offset ? rows fetch first ? rows only
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+2023-12-14T13:51:31.752+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Medication Item->ResponseDto(httpStatus=409, message=Medication Item with 'DET_20-D' already exists, data=null)
+2023-12-14T13:51:31.754+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Retrieved AuditEventLogs ==>[DroneAuditLog(id=1, droneId=1, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.1), DroneAuditLog(id=2, droneId=2, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.2), DroneAuditLog(id=3, droneId=3, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.8), DroneAuditLog(id=4, droneId=4, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.6), DroneAuditLog(id=52, droneId=1, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.1), DroneAuditLog(id=53, droneId=2, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.2), DroneAuditLog(id=54, droneId=3, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.8), DroneAuditLog(id=55, droneId=4, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.6), DroneAuditLog(id=102, droneId=1, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.1), DroneAuditLog(id=103, droneId=2, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.2), DroneAuditLog(id=104, droneId=3, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.8), DroneAuditLog(id=105, droneId=4, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.6)]
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0
+2023-12-14T13:51:31.756+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Successfully Retrieved Med Items -->[Medication(id=1, name=Artifeld, weight=300.3, code=AR-12, image=art.jpg), Medication(id=2, name=Panadol, weight=100.8, code=PA-31, image=pan.jpg), Medication(id=3, name=Detol, weight=150.5, code=DET_20-D, image=det.jpg)]
+2023-12-14T13:51:31.756+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Initial Data Seeding successfully Done
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select next value for drone_seq
+Hibernate: insert into drone (battery_capacity,model,serial_number,state,weight_limit,id) values (?,?,?,?,?,?)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /drones/api/register
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"110"]
+             Body = {"id":null,"serialNumber":"419","model":"LIGHT_WEIGHT","weightLimit":100,"batteryCapacity":0.1,"state":"IDLE"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.afamo.iss.demo.controller.DroneRestController
+           Method = com.afamo.iss.demo.controller.DroneRestController#registerDrone(DroneRequestDTO)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"httpStatus":201,"message":"Successfull","data":{"id":52,"serialNumber":"419","model":"LIGHT_WEIGHT","weightLimit":100,"batteryCapacity":0.1,"state":"IDLE"}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="contextLoads" classname="com.afamo.iss.demo.SpringDataRestApplicationTests" time="1.177">
+    <system-out><![CDATA[2023-12-14T13:51:31.788+01:00  INFO 17084 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-14T13:51:31.789+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-12-14T13:51:31.790+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-12-14T13:51:31.792+01:00  INFO 17084 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-12-14T13:51:31.812+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Starting SpringDataRestApplicationTests using Java 20.0.1 with PID 17084 (started by Afam O in C:\Users\Afam O\IdeaProjects\DEV_DRONES-d942feeb-bc08-a7af-8fe6-e16d278fa891)
+2023-12-14T13:51:31.812+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-12-14T13:51:32.127+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-14T13:51:32.138+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 4 JPA repository interfaces.
+2023-12-14T13:51:32.249+01:00  INFO 17084 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-14T13:51:32.253+01:00  INFO 17084 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-14T13:51:32.261+01:00  INFO 17084 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-14T13:51:32.261+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-12-14T13:51:32.265+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:db user=SA
+2023-12-14T13:51:32.266+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-12-14T13:51:32.266+01:00  WARN 17084 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-14T13:51:32.344+01:00  INFO 17084 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-14T13:51:32.345+01:00  INFO 17084 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-14T13:51:32.509+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Creation Rate===>15000
+2023-12-14T13:51:32.509+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Retrieval Rate===>20000
+2023-12-14T13:51:32.592+01:00  WARN 17084 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-14T13:51:32.905+01:00  INFO 17084 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-14T13:51:32.906+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-14T13:51:32.910+01:00  INFO 17084 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-14T13:51:32.919+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 13 ms
+2023-12-14T13:51:32.935+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Started SpringDataRestApplicationTests in 1.143 seconds (process running for 14.62)
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 offset ? rows fetch first ? rows only
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select count(d1_0.id) from drone d1_0
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select next value for drone_audit_log_seq
+2023-12-14T13:51:32.949+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Drone->ResponseDto(httpStatus=409, message=Drone with serialNumber '141' already exists, data=null)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+2023-12-14T13:51:32.951+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Created AuditEventLogs ==>[DroneAuditLog(id=152, droneId=1, dateTime=2023-12-14T13:51:32.948455200, batteryCapacity=0.1), DroneAuditLog(id=153, droneId=2, dateTime=2023-12-14T13:51:32.948455200, batteryCapacity=0.2), DroneAuditLog(id=154, droneId=3, dateTime=2023-12-14T13:51:32.948455200, batteryCapacity=0.8), DroneAuditLog(id=155, droneId=4, dateTime=2023-12-14T13:51:32.948455200, batteryCapacity=0.6), DroneAuditLog(id=156, droneId=52, dateTime=2023-12-14T13:51:32.948455200, batteryCapacity=0.1)]
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: select dal1_0.id,dal1_0.battery_capacity,dal1_0.date_time,dal1_0.drone_id from drone_audit_log dal1_0 offset ? rows fetch first ? rows only
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+2023-12-14T13:51:32.954+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Medication Item->ResponseDto(httpStatus=409, message=Medication Item with 'DET_20-D' already exists, data=null)
+Hibernate: select count(dal1_0.id) from drone_audit_log dal1_0
+2023-12-14T13:51:32.955+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Retrieved AuditEventLogs ==>[DroneAuditLog(id=1, droneId=1, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.1), DroneAuditLog(id=2, droneId=2, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.2), DroneAuditLog(id=3, droneId=3, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.8), DroneAuditLog(id=4, droneId=4, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.6), DroneAuditLog(id=52, droneId=1, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.1), DroneAuditLog(id=53, droneId=2, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.2), DroneAuditLog(id=54, droneId=3, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.8), DroneAuditLog(id=55, droneId=4, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.6), DroneAuditLog(id=102, droneId=1, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.1), DroneAuditLog(id=103, droneId=2, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.2), DroneAuditLog(id=104, droneId=3, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.8), DroneAuditLog(id=105, droneId=4, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.6), DroneAuditLog(id=152, droneId=1, dateTime=2023-12-14T13:51:32.948455, batteryCapacity=0.1), DroneAuditLog(id=153, droneId=2, dateTime=2023-12-14T13:51:32.948455, batteryCapacity=0.2), DroneAuditLog(id=154, droneId=3, dateTime=2023-12-14T13:51:32.948455, batteryCapacity=0.8)]
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0
+2023-12-14T13:51:32.957+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Successfully Retrieved Med Items -->[Medication(id=1, name=Artifeld, weight=300.3, code=AR-12, image=art.jpg), Medication(id=2, name=Panadol, weight=100.8, code=PA-31, image=pan.jpg), Medication(id=3, name=Detol, weight=150.5, code=DET_20-D, image=det.jpg)]
+2023-12-14T13:51:32.957+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Initial Data Seeding successfully Done
+]]></system-out>
+  </testcase>
+  <testcase name="checkBatteryLevelForGivenDrone" classname="com.afamo.iss.demo.SpringDataRestApplicationTests" time="1.099">
+    <system-out><![CDATA[2023-12-14T13:51:32.972+01:00  INFO 17084 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-14T13:51:32.973+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-12-14T13:51:32.976+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-12-14T13:51:32.979+01:00  INFO 17084 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-12-14T13:51:33.032+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Starting SpringDataRestApplicationTests using Java 20.0.1 with PID 17084 (started by Afam O in C:\Users\Afam O\IdeaProjects\DEV_DRONES-d942feeb-bc08-a7af-8fe6-e16d278fa891)
+2023-12-14T13:51:33.032+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-12-14T13:51:33.288+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-14T13:51:33.300+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 4 JPA repository interfaces.
+2023-12-14T13:51:33.402+01:00  INFO 17084 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-14T13:51:33.406+01:00  INFO 17084 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-14T13:51:33.411+01:00  INFO 17084 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-14T13:51:33.412+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-12-14T13:51:33.413+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:db user=SA
+2023-12-14T13:51:33.414+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-12-14T13:51:33.414+01:00  WARN 17084 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-14T13:51:33.473+01:00  INFO 17084 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-14T13:51:33.475+01:00  INFO 17084 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-14T13:51:33.649+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Creation Rate===>15000
+2023-12-14T13:51:33.649+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Retrieval Rate===>20000
+2023-12-14T13:51:33.714+01:00  WARN 17084 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-14T13:51:34.019+01:00  INFO 17084 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-14T13:51:34.019+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-14T13:51:34.023+01:00  INFO 17084 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-14T13:51:34.028+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 9 ms
+2023-12-14T13:51:34.039+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Started SpringDataRestApplicationTests in 1.06 seconds (process running for 15.724)
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 offset ? rows fetch first ? rows only
+Hibernate: select count(d1_0.id) from drone d1_0
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select next value for drone_audit_log_seq
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+2023-12-14T13:51:34.048+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Created AuditEventLogs ==>[DroneAuditLog(id=202, droneId=1, dateTime=2023-12-14T13:51:34.044218700, batteryCapacity=0.1), DroneAuditLog(id=203, droneId=2, dateTime=2023-12-14T13:51:34.044218700, batteryCapacity=0.2), DroneAuditLog(id=204, droneId=3, dateTime=2023-12-14T13:51:34.044218700, batteryCapacity=0.8), DroneAuditLog(id=205, droneId=4, dateTime=2023-12-14T13:51:34.044218700, batteryCapacity=0.6), DroneAuditLog(id=206, droneId=52, dateTime=2023-12-14T13:51:34.044218700, batteryCapacity=0.1)]
+2023-12-14T13:51:34.048+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Drone->ResponseDto(httpStatus=409, message=Drone with serialNumber '141' already exists, data=null)
+Hibernate: select dal1_0.id,dal1_0.battery_capacity,dal1_0.date_time,dal1_0.drone_id from drone_audit_log dal1_0 offset ? rows fetch first ? rows only
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: select count(dal1_0.id) from drone_audit_log dal1_0
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+2023-12-14T13:51:34.053+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Medication Item->ResponseDto(httpStatus=409, message=Medication Item with 'DET_20-D' already exists, data=null)
+2023-12-14T13:51:34.053+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Retrieved AuditEventLogs ==>[DroneAuditLog(id=1, droneId=1, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.1), DroneAuditLog(id=2, droneId=2, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.2), DroneAuditLog(id=3, droneId=3, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.8), DroneAuditLog(id=4, droneId=4, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.6), DroneAuditLog(id=52, droneId=1, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.1), DroneAuditLog(id=53, droneId=2, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.2), DroneAuditLog(id=54, droneId=3, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.8), DroneAuditLog(id=55, droneId=4, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.6), DroneAuditLog(id=102, droneId=1, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.1), DroneAuditLog(id=103, droneId=2, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.2), DroneAuditLog(id=104, droneId=3, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.8), DroneAuditLog(id=105, droneId=4, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.6), DroneAuditLog(id=152, droneId=1, dateTime=2023-12-14T13:51:32.948455, batteryCapacity=0.1), DroneAuditLog(id=153, droneId=2, dateTime=2023-12-14T13:51:32.948455, batteryCapacity=0.2), DroneAuditLog(id=154, droneId=3, dateTime=2023-12-14T13:51:32.948455, batteryCapacity=0.8)]
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0
+2023-12-14T13:51:34.054+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Successfully Retrieved Med Items -->[Medication(id=1, name=Artifeld, weight=300.3, code=AR-12, image=art.jpg), Medication(id=2, name=Panadol, weight=100.8, code=PA-31, image=pan.jpg), Medication(id=3, name=Detol, weight=150.5, code=DET_20-D, image=det.jpg)]
+2023-12-14T13:51:34.054+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Initial Data Seeding successfully Done
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.id=?
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /drones/api/check/batteryLevel/1
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.afamo.iss.demo.controller.DroneRestController
+           Method = com.afamo.iss.demo.controller.DroneRestController#getSingleDrone(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"httpStatus":200,"message":"Successfull","data":0.1}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="checkMedicationsItemsForGivenDrone" classname="com.afamo.iss.demo.SpringDataRestApplicationTests" time="1.012">
+    <system-out><![CDATA[2023-12-14T13:51:34.072+01:00  INFO 17084 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-14T13:51:34.073+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-12-14T13:51:34.076+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-12-14T13:51:34.078+01:00  INFO 17084 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2023-12-14T13:51:34.093+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Starting SpringDataRestApplicationTests using Java 20.0.1 with PID 17084 (started by Afam O in C:\Users\Afam O\IdeaProjects\DEV_DRONES-d942feeb-bc08-a7af-8fe6-e16d278fa891)
+2023-12-14T13:51:34.094+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-12-14T13:51:34.275+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-14T13:51:34.292+01:00  INFO 17084 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 4 JPA repository interfaces.
+2023-12-14T13:51:34.459+01:00  INFO 17084 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-14T13:51:34.461+01:00  INFO 17084 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-14T13:51:34.466+01:00  INFO 17084 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-14T13:51:34.466+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-12-14T13:51:34.467+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:db user=SA
+2023-12-14T13:51:34.467+01:00  INFO 17084 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-12-14T13:51:34.468+01:00  WARN 17084 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-12-14T13:51:34.552+01:00  INFO 17084 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-14T13:51:34.554+01:00  INFO 17084 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-14T13:51:34.693+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Creation Rate===>15000
+2023-12-14T13:51:34.693+01:00  INFO 17084 --- [           main] c.a.iss.demo.utility.AuditLogScheduler   : Audit Retrieval Rate===>20000
+2023-12-14T13:51:34.754+01:00  WARN 17084 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-14T13:51:35.024+01:00  INFO 17084 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-14T13:51:35.024+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-12-14T13:51:35.027+01:00  INFO 17084 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-14T13:51:35.033+01:00  INFO 17084 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 9 ms
+2023-12-14T13:51:35.047+01:00  INFO 17084 --- [           main] c.a.i.d.SpringDataRestApplicationTests   : Started SpringDataRestApplicationTests in 0.969 seconds (process running for 16.732)
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 offset ? rows fetch first ? rows only
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select count(d1_0.id) from drone d1_0
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select next value for drone_audit_log_seq
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+Hibernate: insert into drone_audit_log (battery_capacity,date_time,drone_id,id) values (?,?,?,?)
+2023-12-14T13:51:35.056+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Created AuditEventLogs ==>[DroneAuditLog(id=252, droneId=1, dateTime=2023-12-14T13:51:35.052204, batteryCapacity=0.1), DroneAuditLog(id=253, droneId=2, dateTime=2023-12-14T13:51:35.052204, batteryCapacity=0.2), DroneAuditLog(id=254, droneId=3, dateTime=2023-12-14T13:51:35.052204, batteryCapacity=0.8), DroneAuditLog(id=255, droneId=4, dateTime=2023-12-14T13:51:35.052204, batteryCapacity=0.6), DroneAuditLog(id=256, droneId=52, dateTime=2023-12-14T13:51:35.052204, batteryCapacity=0.1)]
+Hibernate: select d1_0.id,d1_0.battery_capacity,d1_0.model,d1_0.serial_number,d1_0.state,d1_0.weight_limit from drone d1_0 where d1_0.serial_number=?
+Hibernate: select dal1_0.id,dal1_0.battery_capacity,dal1_0.date_time,dal1_0.drone_id from drone_audit_log dal1_0 offset ? rows fetch first ? rows only
+2023-12-14T13:51:35.057+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Drone->ResponseDto(httpStatus=409, message=Drone with serialNumber '141' already exists, data=null)
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: select count(dal1_0.id) from drone_audit_log dal1_0
+2023-12-14T13:51:35.060+01:00  INFO 17084 --- [   scheduling-1] c.a.iss.demo.utility.AuditLogScheduler   : Successfully Retrieved AuditEventLogs ==>[DroneAuditLog(id=1, droneId=1, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.1), DroneAuditLog(id=2, droneId=2, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.2), DroneAuditLog(id=3, droneId=3, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.8), DroneAuditLog(id=4, droneId=4, dateTime=2023-12-14T13:51:28.079096, batteryCapacity=0.6), DroneAuditLog(id=52, droneId=1, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.1), DroneAuditLog(id=53, droneId=2, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.2), DroneAuditLog(id=54, droneId=3, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.8), DroneAuditLog(id=55, droneId=4, dateTime=2023-12-14T13:51:30.353466, batteryCapacity=0.6), DroneAuditLog(id=102, droneId=1, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.1), DroneAuditLog(id=103, droneId=2, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.2), DroneAuditLog(id=104, droneId=3, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.8), DroneAuditLog(id=105, droneId=4, dateTime=2023-12-14T13:51:31.747056, batteryCapacity=0.6), DroneAuditLog(id=152, droneId=1, dateTime=2023-12-14T13:51:32.948455, batteryCapacity=0.1), DroneAuditLog(id=153, droneId=2, dateTime=2023-12-14T13:51:32.948455, batteryCapacity=0.2), DroneAuditLog(id=154, droneId=3, dateTime=2023-12-14T13:51:32.948455, batteryCapacity=0.8)]
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0 where m1_0.code=?
+2023-12-14T13:51:35.065+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Last created Medication Item->ResponseDto(httpStatus=409, message=Medication Item with 'DET_20-D' already exists, data=null)
+Hibernate: select m1_0.id,m1_0.code,m1_0.image,m1_0.name,m1_0.weight from medications m1_0
+2023-12-14T13:51:35.069+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Successfully Retrieved Med Items -->[Medication(id=1, name=Artifeld, weight=300.3, code=AR-12, image=art.jpg), Medication(id=2, name=Panadol, weight=100.8, code=PA-31, image=pan.jpg), Medication(id=3, name=Detol, weight=150.5, code=DET_20-D, image=det.jpg)]
+2023-12-14T13:51:35.069+01:00  INFO 17084 --- [           main] c.afamo.iss.demo.DroneRestApplication    : Initial Data Seeding successfully Done
+Hibernate: select dm1_0.id,dm1_0.drone_id,dm1_0.medication_id from drone_medications dm1_0 where dm1_0.drone_id=?
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /drones/api/check/MedicationItems/2
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.afamo.iss.demo.controller.DroneRestController
+           Method = com.afamo.iss.demo.controller.DroneRestController#checkMedicationsItemsForADrone(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"httpStatus":404,"message":"The Drone with id '2' has not been loaded","data":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+</testsuite>
